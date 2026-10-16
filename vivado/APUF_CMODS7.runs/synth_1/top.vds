@@ -1,0 +1,680 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Jul  1 17:20:06 2026
+# Process ID: 2403566
+# Current directory: /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.runs/synth_1
+# Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.runs/synth_1/top.vds
+# Journal file: /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7s25csga225-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Device 21-403] Loading part xc7s25csga225-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2404028 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1901.109 ; gain = 202.688 ; free physical = 15120 ; free virtual = 23619
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/sources_1/new/top.v:1]
+	Parameter STAGES bound to: 128 - type: integer 
+	Parameter PDL_STAGES bound to: 16 - type: integer 
+	Parameter BAUD bound to: 1000000 - type: integer 
+	Parameter TOTAL_STAGES bound to: 144 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [/home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/sources_1/new/uart_rx.v:1]
+	Parameter CLK_FREQ bound to: 12000000 - type: integer 
+	Parameter BAUD bound to: 1000000 - type: integer 
+	Parameter DIV bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (1#1) [/home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/sources_1/new/uart_rx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [/home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/sources_1/new/uart_tx.v:1]
+	Parameter CLK_FREQ bound to: 12000000 - type: integer 
+	Parameter BAUD bound to: 1000000 - type: integer 
+	Parameter DIV bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (2#1) [/home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/sources_1/new/uart_tx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'apuf' [/home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/sources_1/new/APUF.v:1]
+	Parameter STAGES bound to: 128 - type: integer 
+	Parameter PDL_STAGES bound to: 16 - type: integer 
+	Parameter TOTAL_STAGES bound to: 144 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "yes" *) [/home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/sources_1/new/APUF.v:70]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "yes" *) [/home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/sources_1/new/APUF.v:70]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "yes" *) [/home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/sources_1/new/APUF.v:72]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "yes" *) [/home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/sources_1/new/APUF.v:72]
+INFO: [Synth 8-6157] synthesizing module 'LUT3' [/home/vinagres/opt/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+	Parameter INIT bound to: 8'b11001010 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3' (3#1) [/home/vinagres/opt/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [/home/vinagres/opt/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+	Parameter INIT bound to: 8'b10101100 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (3#1) [/home/vinagres/opt/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6157] synthesizing module 'LUT2' [/home/vinagres/opt/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39123]
+	Parameter INIT bound to: 4'b0100 
+INFO: [Synth 8-6155] done synthesizing module 'LUT2' (4#1) [/home/vinagres/opt/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39123]
+INFO: [Synth 8-6155] done synthesizing module 'apuf' (5#1) [/home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/sources_1/new/APUF.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (6#1) [/home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/sources_1/new/top.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1963.859 ; gain = 265.438 ; free physical = 15062 ; free virtual = 23546
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1963.859 ; gain = 265.438 ; free physical = 15088 ; free virtual = 23572
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1963.859 ; gain = 265.438 ; free physical = 15088 ; free virtual = 23572
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1969.797 ; gain = 0.000 ; free physical = 15078 ; free virtual = 23562
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [/home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2128.609 ; gain = 0.000 ; free physical = 14900 ; free virtual = 23414
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2128.609 ; gain = 0.000 ; free physical = 14900 ; free virtual = 23414
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 2128.609 ; gain = 430.188 ; free physical = 15030 ; free virtual = 23529
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s25csga225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 2128.609 ; gain = 430.188 ; free physical = 15030 ; free virtual = 23529
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for puf0/nand_upper. (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/nand_lower. (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[0].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[0].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[1].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[1].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[2].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[2].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[3].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[3].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[4].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[4].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[5].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[5].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[6].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[6].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[7].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[7].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[8].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[8].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[9].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[9].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[10].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[10].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[11].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[11].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[12].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[12].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[13].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[13].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[14].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[14].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[15].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[15].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[16].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[16].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[17].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[17].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[18].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[18].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[19].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[19].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[20].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[20].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[21].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[21].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[22].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[22].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[23].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[23].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[24].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[24].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[25].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[25].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[26].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[26].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[27].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[27].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[28].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[28].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[29].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[29].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[30].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[30].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[31].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[31].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[32].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[32].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[33].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[33].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[34].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[34].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[35].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[35].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[36].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[36].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[37].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[37].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[38].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[38].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[39].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[39].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[40].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[40].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[41].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[41].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[42].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[42].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[43].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[43].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[44].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[44].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[45].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[45].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[46].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[46].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[47].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[47].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[48].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[48].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[49].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[49].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[50].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[50].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[51].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[51].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[52].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[52].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[53].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[53].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[54].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[54].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[55].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[55].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[56].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[56].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[57].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[57].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[58].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[58].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[59].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[59].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[60].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[60].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[61].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[61].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[62].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[62].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[63].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[63].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[64].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[64].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[65].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[65].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[66].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[66].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[67].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[67].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[68].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[68].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[69].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[69].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[70].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[70].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[71].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[71].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[72].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[72].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[73].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[73].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[74].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[74].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[75].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[75].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[76].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[76].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[77].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[77].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[78].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[78].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[79].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[79].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[80].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[80].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[81].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[81].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[82].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[82].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[83].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[83].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[84].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[84].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[85].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[85].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[86].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[86].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[87].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[87].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[88].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[88].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[89].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[89].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[90].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[90].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[91].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[91].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[92].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[92].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[93].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[93].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[94].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[94].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[95].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[95].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[96].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[96].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[97].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[97].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[98].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[98].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[99].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[99].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[100].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[100].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[101].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[101].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[102].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[102].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[103].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[103].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[104].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[104].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[105].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[105].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[106].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[106].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[107].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[107].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[108].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[108].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[109].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[109].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[110].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[110].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[111].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[111].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[112].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[112].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[113].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[113].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[114].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[114].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[115].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[115].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[116].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[116].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[117].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[117].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[118].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[118].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[119].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[119].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[120].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[120].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[121].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[121].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[122].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[122].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[123].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[123].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[124].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[124].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[125].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[125].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[126].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[126].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[127].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[127].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[128].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[128].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[129].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[129].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[130].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[130].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[131].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[131].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[132].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[132].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[133].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[133].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[134].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[134].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[135].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[135].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[136].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[136].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[137].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[137].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[138].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[138].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[139].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[139].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[140].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[140].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[141].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[141].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[142].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[142].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[143].upper_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/\STAGE[143].lower_mux . (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/start_shift_reg. (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/done_reg. (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/response_reg. (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+Applied set_property DONT_TOUCH = true for puf0/race_active_reg. (constraint file  /home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.srcs/constrs_1/new/top.xdc, line 18).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 2128.609 ; gain = 430.188 ; free physical = 15030 ; free virtual = 23529
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 2128.609 ; gain = 430.188 ; free physical = 15107 ; free virtual = 23601
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	              144 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	              144 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module apuf 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 90 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\tx0/shift_reg[9] )
+INFO: [Synth 8-3886] merging instance 'tx0/shift_reg[8]' (FDE) to 'tx0/shift_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tx0/shift_reg[7]' (FDE) to 'tx0/shift_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tx0/shift_reg[6]' (FDE) to 'tx0/shift_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tx0/shift_reg[5]' (FDE) to 'tx0/shift_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tx0/shift_reg[4]' (FDE) to 'tx0/shift_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tx0/shift_reg[3]' (FDE) to 'tx0/shift_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tx0/shift_reg[2]' (FDE) to 'tx0/shift_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tx0/shift_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pdl_configured_reg)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 2128.609 ; gain = 430.188 ; free physical = 15136 ; free virtual = 23629
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 2128.609 ; gain = 430.188 ; free physical = 15013 ; free virtual = 23508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+      : puf0/puf_out_bar_inferred__0/out
+      : puf0/puf_out_bar_inferred__0/in0
+      : puf0/puf_out_bar_inferred/out
+      : puf0/puf_out_bar_inferred/in0
+      : puf0/puf_out_inferred__0/out
+      : puf0/puf_out_inferred__0/in0
+      : puf0/puf_out_inferred/out
+      : puf0/puf_out_inferred/in0
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 2128.609 ; gain = 430.188 ; free physical = 15013 ; free virtual = 23508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2128.609 ; gain = 430.188 ; free physical = 15006 ; free virtual = 23513
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2128.609 ; gain = 430.188 ; free physical = 15019 ; free virtual = 23515
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2128.609 ; gain = 430.188 ; free physical = 15019 ; free virtual = 23515
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2128.609 ; gain = 430.188 ; free physical = 15019 ; free virtual = 23515
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2128.609 ; gain = 430.188 ; free physical = 15019 ; free virtual = 23515
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2128.609 ; gain = 430.188 ; free physical = 15019 ; free virtual = 23515
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2128.609 ; gain = 430.188 ; free physical = 15019 ; free virtual = 23515
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    14|
+|3     |LUT1   |     6|
+|4     |LUT2   |    41|
+|5     |LUT3   |   295|
+|6     |LUT4   |    21|
+|7     |LUT5   |     9|
+|8     |LUT6   |    18|
+|9     |FDRE   |   249|
+|10    |FDSE   |     1|
+|11    |IBUF   |     3|
+|12    |OBUF   |     5|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+--------+------+
+|      |Instance |Module  |Cells |
++------+---------+--------+------+
+|1     |top      |        |   663|
+|2     |  puf0   |apuf    |   298|
+|3     |  rx0    |uart_rx |    87|
+|4     |  tx0    |uart_tx |    62|
++------+---------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2128.609 ; gain = 430.188 ; free physical = 15019 ; free virtual = 23515
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 2128.609 ; gain = 265.438 ; free physical = 15022 ; free virtual = 23519
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2128.609 ; gain = 430.188 ; free physical = 15030 ; free virtual = 23527
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2128.609 ; gain = 0.000 ; free physical = 15031 ; free virtual = 23527
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2128.609 ; gain = 0.000 ; free physical = 15113 ; free virtual = 23610
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:38 . Memory (MB): peak = 2128.609 ; gain = 665.094 ; free physical = 15187 ; free virtual = 23684
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2128.609 ; gain = 0.000 ; free physical = 15187 ; free virtual = 23684
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/vinagres/Programming/APUF_CMODS7/vivado/APUF_CMODS7.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  1 17:20:52 2026...

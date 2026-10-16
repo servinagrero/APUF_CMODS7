@@ -1,0 +1,13 @@
+build/
+data/
+constraints/
+*.backup*
+*.log
+*.db
+*.jou
+*.log
+__pycache__/
+.ipynb_checkpoints/
+*.xpr
+config.toml
+config_*.toml
